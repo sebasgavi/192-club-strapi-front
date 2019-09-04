@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+
+            <section class="col-md-4">
+                <div class="input-group mt-4 mb-3">
+                    <input 
+                        type="text" 
+                        class="form-control" 
+                        placeholder="Buscar productos...">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary">Buscar</button>
+                    </div>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        Audiencia
+                    </li>
+                    <li class="list-group-item">
+                        Tipo
+                    </li>
+                    <li class="list-group-item">
+                        Precio
+                    </li>
+                </ul>
+            </section>
+
+            <section class="col-md-8">
+                <div class="row products-list">
+                    
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <template id="product-item">
+        <div class="col-md-4 mt-4">
+            <div class="card">
+                <img class="card-img-top" src="https://assets.trome.pe/files/article_main/uploads/2019/09/01/5d6c45382a043.png" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">El Producto</h5>
+                    <p class="card-text">$100.000</p>
+                    <a href="#" class="btn btn-primary">Comprar</a>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <script src="./scripts/main.js"></script>
+    
+</body>
+</html>
