@@ -1,0 +1,56 @@
+.skeleton{
+    pointer-events: none;
+    user-select: none;
+    display: none;
+}
+
+.loading .skeleton{
+    display: block;
+}
+
+.skeleton .skeleton-text{
+    background: lightgray;
+    width: fit-content;
+    color: transparent;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+}
+
+.skeleton .skeleton-text::before{
+    content: '';
+    height: 100%;
+    width: 50%;
+    background: gray;
+    opacity: .4;
+    position: absolute;
+    transform: translate(-100%);
+    animation-name: skeleton-bar;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+.skeleton .skeleton-text:nth-child(2)::before{
+    animation-delay: .1s;
+}
+
+.skeleton .btn{
+    color: transparent;
+    background: lightgray;
+    border-color: gray;
+}
+
+.skeleton .card-img-top{
+    height: 120px;
+    background-color: lightgray;
+}
+
+
+@keyframes skeleton-bar{
+    from{
+        transform: translate(-100%, 0%);
+    }
+    to{
+        transform: translate(250%, 0%);
+    }
+}
